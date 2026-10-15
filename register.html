@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-require DIR . '/config/database.php';
+<head>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -36,49 +36,82 @@ require DIR . '/config/database.php';
                             <div class="text-center">
                                 <h1 class="h4 text-gray-900 mb-4">Create an Account!</h1>
                             </div>
-                            <form class="user" action="signup.php" method="POST">
-                                <div class="form-group row">
-                                    <div class="col-sm-6 mb-3 mb-sm-0">
-                                        <input type="text" class="form-control form-control-user" id="exampleFirstName"
-                                            placeholder="First Name">
-                                    </div>
+                                                    
+                        <form name="register-form" action="signup.php" method="POST">
 
-                                    <div class="col-sm-6">
-                                        <input type="text" class="form-control form-control-user" id="exampleLastName"
-                                            placeholder="Last Name">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" class="form-control form-control-user" id="exampleInputEmail"
-                                        placeholder="Email Address">
-                                </div>
-                                
-                                
-                                <div class="form-group">
-                                  <input type="tel" class="form-control form-control-user" id="mphone" name="mphone" placeholder="Mobile Phone"  required>
+                            <div class="form-group row">
+                                <div class="col-sm-6 mb-3 mb-sm-0">
+                                    <input
+                                        type="text"
+                                        class="form-control form-control-user"
+                                        name="fname"
+                                        placeholder="First Name"
+                                        required>
                                 </div>
 
-                                <div class="form-group row">
-                                    <div class="col-sm-6 mb-3 mb-sm-0">
-                                        <input type="password" class="form-control form-control-user"
-                                            id="exampleInputPassword" placeholder="Password">
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <input type="password" class="form-control form-control-user"
-                                            id="exampleRepeatPassword" placeholder="Repeat Password">
-                                    </div>
+                                <div class="col-sm-6">
+                                    <input
+                                        type="text"
+                                        class="form-control form-control-user"
+                                        name="lname"
+                                        placeholder="Last Name"
+                                        required>
                                 </div>
-                                <button type="submit" class="btn btn-primary btn-user btn-block">
-                                    Register Account
-                                </button>
-                                <hr>
-                                <a href="index.html" class="btn btn-google btn-user btn-block">
-                                    <i class="fab fa-google fa-fw"></i> Register with Google
-                                </a>
-                                <a href="index.html" class="btn btn-facebook btn-user btn-block">
-                                    <i class="fab fa-facebook-f fa-fw"></i> Register with Facebook
-                                </a>
-                            </form>
+                            </div>
+
+                            <div class="form-group">
+                                <input
+                                    type="tel"
+                                    class="form-control form-control-user"
+                                    name="mphone"
+                                    placeholder="Mobile Number"
+                                    required>
+                            </div>
+
+                            <div class="form-group">
+                                <input
+                                    type="email"
+                                    class="form-control form-control-user"
+                                    name="email"
+                                    placeholder="Email Address"
+                                    required>
+                            </div>
+
+                            <div class="form-group row">
+                                <div class="col-sm-6 mb-3 mb-sm-0">
+                                    <input
+                                        type="password"
+                                        class="form-control form-control-user"
+                                        name="pswd"
+                                        id="password"
+                                        placeholder="Password"
+                                        minlength="8"
+                                        required>
+                                </div>
+
+                                
+                                        <div class="col-sm-6">
+                                                                <input type="password" class="form-control form-control-user"
+                                                                    id="exampleRepeatPassword" placeholder="Repeat Password">
+                                                            </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-user btn-block">
+                                Register Account
+                            </button>
+
+                            <hr>
+
+                            <a href="index.html" class="btn btn-google btn-user btn-block">
+                                <i class="fab fa-google fa-fw"></i> Register with Google
+                            </a>
+
+                            <a href="index.html" class="btn btn-facebook btn-user btn-block">
+                                <i class="fab fa-facebook-f fa-fw"></i> Register with Facebook
+                            </a>
+
+                        </form>
+
                             <hr>
                             <div class="text-center">
                                 <a class="small" href="forgot-password.html">Forgot Password?</a>
@@ -107,3 +140,4 @@ require DIR . '/config/database.php';
 </body>
 
 </html>
+

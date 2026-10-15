@@ -1,8 +1,7 @@
 <?php
 
 //recibir los datos del formulario de registro
-require_once __DIR__ . '/database.php';
-
+require __DIR__ . '/database.php';
 
 //recibir los datos del formulario de registro
 $f_name = $_POST['fname'];
@@ -33,6 +32,6 @@ $sql = "insert into users(  firstname, lastname, mobile_phone, email, password)
 //redireccionar a la pagina de inicio de sesion
 echo"<script>alert('User has been created successfully!!!');</script>";
 //redireccionar a la pagina de inicio de sesion
-header('refresh: 0; url=signin.html');
+header('refresh: 0; url=login.html');
 
 ?>
